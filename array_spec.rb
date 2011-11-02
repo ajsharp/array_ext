@@ -1,4 +1,4 @@
-require File.expand_path(File.dirname(__FILE__) + '/../../../lib/ext/array')
+require 'array'
 
 describe Array, "#in?" do
   it "returns true when the two arrays share at least one element" do

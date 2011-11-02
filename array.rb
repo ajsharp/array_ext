@@ -23,9 +23,7 @@ class Array
         arr.detect { |j| yield(i, j) }
       end
     else
-      self.detect do |i|
-        arr.detect { |j| i == j }
-      end
+      !(self & arr).empty?
     end
   end
 end
